@@ -1,0 +1,32 @@
+{
+  "generator-ngx-rocket": {
+    "version": "11.0.0",
+    "props": {
+      "location": "path",
+      "strict": true,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "target": ["web", "cordova", "electron"],
+      "mobile": ["ios", "android"],
+      "desktop": ["windows", "linux"],
+      "ui": "ionic",
+      "layout": "tabs",
+      "features": ["pwa", "auth", "lazy", "cypress"],
+      "languages": ["de-DE", "en-US", "fr-FR", "it-IT"],
+      "tools": ["prettier", "hads", "compodoc"],
+      "utility": ["ramda", "datefns"],
+      "deploy": "firebase",
+      "appName": "iwi",
+      "projectName": "iwi",
+      "packageManager": "npm",
+      "pwa": true,
+      "auth": true,
+      "lazy": true,
+      "e2e": false,
+      "cypress": true,
+      "angulartics": false
+    }
+  }
+}
