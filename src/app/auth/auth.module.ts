@@ -7,9 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { I18nModule } from '@app/i18n';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login.component';
+import { SharedModule } from '@app/@shared';
 
 @NgModule({
-  imports: [CommonModule, ReactiveFormsModule, TranslateModule, IonicModule, I18nModule, AuthRoutingModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    TranslateModule,
+    IonicModule,
+    I18nModule,
+    AuthRoutingModule,
+    SharedModule,
+  ],
   declarations: [LoginComponent],
 })
 export class AuthModule {}
