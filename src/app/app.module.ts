@@ -18,6 +18,7 @@ import { ShellModule } from './shell/shell.module';
 import { SettingsModule } from './settings/settings.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { IwiWorldModule } from './iwi-world/iwi-world.module';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
     SharedModule,
     ShellModule,
     HomeModule,
+    IwiWorldModule,
     SettingsModule,
     AuthModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route

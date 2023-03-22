@@ -1,22 +1,15 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
     <ion-title><span translate>Home</span></ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+      <app-mic-canvas></app-mic-canvas>
+      <ion-button shape="circle" color="warning" fill="outline">
+        <ion-icon name="mic"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-card class="ion-text-center">
-    <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-    <ion-card-content>
-      <ion-card-title>
-        <span translate>Hello world !</span>
-      </ion-card-title>
-      <p>
-        <app-loader [isLoading]="isLoading"></app-loader>
-        <q [hidden]="isLoading">{{ quote }}</q>
-      </p>
-    </ion-card-content>
-  </ion-card>
+  <app-home-scene></app-home-scene>
 </ion-content>

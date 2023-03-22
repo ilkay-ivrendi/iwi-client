@@ -1,5 +1,7 @@
 <ion-content no-bounce>
-  <app-matrix-background></app-matrix-background>
+  <div class="login-background">
+    <app-matrix-background></app-matrix-background>
+  </div>
   <ion-grid class="ion-no-padding">
     <ion-row class="ion-justify-content-center ion-no-padding">
       <ion-col size-sm="8" size-lg="6" size-xl="4" class="ion-align-self-center ion-no-padding">
@@ -50,10 +52,19 @@
                 expand="block"
                 translate
               >
-                Login
+                Stay Away!
+              </ion-button>
+              <ion-button
+                type="submit"
+                [disabled]="loginForm.invalid || isLoading"
+                color="danger"
+                expand="block"
+                translate
+              >
+                Join
               </ion-button>
               <div class="ion-padding-horizontal">
-                <canvas id="micCanvas"></canvas>
+                <app-mic-canvas></app-mic-canvas>
               </div>
               <div class="ion-padding-horizontal">
                 <h1>You Said: {{ transcription$ | async }}</h1>
